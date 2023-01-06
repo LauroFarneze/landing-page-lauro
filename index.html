@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lauro Farneze - Portifólio</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/144affef10.js" crossorigin="anonymous"></script> <!--codigo para colocar icones do fontawesome-->
+</head>
+
+<body>
+
+    <header>
+        <div id="foto_perfil">
+           <img src="./foto_perfil.jpg" alt="foto 3x4 do desenvolvedor Lauro Farneze">
+        </div>
+
+        <ul>
+            <li>
+               <a target="_blanc" href="https://www.linkedin.com/in/lauro-farneze-a047501b0/"> Linkedin</a> |
+            </li>
+            <li>
+                <a target="_blanc" href="mailto:laurofarneze85@gmail.com"> Email</a> |
+            </li>
+            <li>
+                <a target="_blanc" href="https://wa.me/13981236315"> WhatsApp </a> 
+            </li>
+        </ul>
+    </header>
+
+
+
+    <main class="clear">
+
+        <section class="container">
+            <div class="nome">
+                <h1>Lauro Farneze</h1>
+                <h5>Full Stack developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+
+                <i id="animation" class="fa-solid fa-square-caret-down"></i>
+                
+            </div>
+
+            <div style="display: none;" id="about">
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam a debitis eaque itaque, repellat 
+                    praesentium aperiam sunt inventore, veniam nemo dignissimos vel ad. Dolorem natus molestiae 
+                    sed quia dolor recusandae.
+                </p>
+
+            </div>
+
+            <br>
+
+            <div id="form">
+                <div>
+                    <p>Deixe seu contato:</p>
+            </div>
+            
+            <br>
+                
+                <form action="">    
+                    <input type="text" placeholder="Seu melhor e-mail :)">
+                    <button>Enviar!</button>
+                </form>
+                
+            </div>
+
+        </section>
+    </main>
+    
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
